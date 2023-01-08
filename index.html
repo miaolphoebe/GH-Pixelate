@@ -11,12 +11,29 @@
   <body>
     <h1>Pixelate</h1>
     <div>
-      <button id='add-row'>Add a row</button>
-      <select>
+      <select id="numOfColumn">
         <!-- add options here! -->
+        <option value="5">columns:5</option>
+        <option value="10">columns:10</option>
+        <option value="15">columns:15</option>
+        <option value="20">columns:20</option>
       </select>
+      <button id='add-row'>Add a row</button>  
+      <button id='remove-row'>Remove a row</button>  
+      <button id='fill-up-color'>Fill Up</button>
+      <button id='fill-up-non-color'>Fill Up Non-color</button>
+      <select id="select">
+        <!-- add options here! -->
+        <option value="red">Red</option>
+        <option value="black">Black</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+      <button id='clear-row'>CLEAR</button>
     </div>
-    <table></table>
+    <table id="table">
+     
+    </table>
   </body>
   <!-- loads our JavaScript file -->
   <script type="text/javascript" src="/script.js"></script>
